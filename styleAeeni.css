@@ -1,0 +1,636 @@
+@font-face {
+    font-family:"MavenPro";
+    src: url(fontfaml/MavenPro-Medium.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: "montserrat";
+    src: url(fontfaml/MontserratAlternates-Regular.otf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: "coolvetica";
+    src: url(fontfaml/coolvetica\ condensed\ rg.otf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: "roboto";
+    src: url(fontfaml/Roboto-Light.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "roboto";
+    src: url(fontfaml/Roboto-Medium.ttf);
+    font-weight: 600;
+}
+@font-face {
+    font-family: "roboto";
+    src: url(fontfaml/Roboto-Regular.ttf);
+    font-weight: 500;
+}
+:root{
+    --color-princ:#fcfcfc;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #F5EDEE;
+}
+
+a{
+    text-decoration: none;
+}
+.header{
+
+	background:linear-gradient(to bottom ,rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url(image/etudiants.jpg);
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 800px;
+	clip-path:polygon(0 0 , 100% 0,100% 95%, 50% 100%,0 95%);
+}
+.logoeni{
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    display:inline-flex;
+    align-items: center;
+    font-family: MavenPro;
+}
+
+.logo p{
+    
+    font-size: 1em;;
+    font-weight:lighter;
+    opacity: .7;
+    color: rgb(15, 14, 14);
+}
+
+.logo img{
+    height: 100%;
+}
+
+.nav{
+    display: flex;
+    height: 70px;
+    padding: 0 100px;
+    justify-content: space-between;
+    background-color:#ffffff;
+}
+
+.link{
+display: flex;
+align-items: center;
+
+
+}
+
+.link a{
+    font-family: Verdana, Tahoma, sans-serif;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    height: 100%;
+    color: rgb(37, 34, 34);
+    opacity: .8;
+    transition: all .5s ease-in;
+}
+.link a:hover{
+    transform: scale(1.2);
+    color: #561F25 ;
+
+}
+.icon{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.icon a{
+    padding: 0 10px;
+}
+
+.composition{
+    display: flex;
+}
+.entete{
+    color: #fcfcfc;
+    padding: 150px 100px;
+    width: 50%;
+    margin-top: 70px;
+}
+.entete h1{
+    font-family: MavenPro;
+    font-size: 44px ;
+    font-weight: 500;
+}
+.entete p{
+    font-size: 18px;
+    font-style: italic;
+    font-weight: lighter;
+    font-family: sans-serif;
+    padding:20px  20px 45px 0px ;
+}
+.btn{
+    font-family: MavenPro;
+    color: #561F25;
+    margin-top: 20px;
+    background:white;
+	font-size: 12px; 
+	font-weight: 500;
+	padding: 18px 34px;
+	border-radius: 25px;
+	letter-spacing: 2px;
+	transition:.5s;
+    opacity: .8;
+}
+.btn:hover{
+    background-color: #561F25;
+    opacity: .8;
+    color: aliceblue;
+}
+.blog{
+    position:relative;
+    width: 50%;
+
+}
+.blog_img{
+    width: 40%;
+    box-shadow: 0 1.2rem 4rem rgba(0, 0, 0,0.4);
+	position: absolute;
+	z-index: 10;
+	transition: .5s;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% -50%);
+    opacity: .7;
+}
+.image1{
+	left: 12%;
+	top:35%;
+    height: 158px;
+    width: 258px;
+}
+.image2{
+	left:45%;
+	top:39%;
+   
+}
+.image3{
+	left:30%;
+	top: 55%;
+}
+.blog_img:hover{
+    box-shadow: 0 2.5rem 4rem rgba(0, 0, 0,0.6);
+	transform: scale(1.05) translateY(-0.5rem);
+	z-index: 20;
+    opacity: 1;
+}
+
+
+
+
+
+
+/****************** nos club ********************/
+
+main{
+    padding: 100px 100px 100px 0;
+}
+.titre_club{
+    margin-bottom: 20px;
+    position: relative;
+	padding-bottom: 10px;
+    padding-left:120px;
+	line-height: 1.5;
+    background-color: #6D3641;
+    color: #F2CA98;
+    clip-path: polygon(0 0, 95% 0, 100% 50%, 95% 100%, 0 100%);
+}
+.titre_club .nosclub{
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    font-size: 50px;
+    font-family: MavenPro;
+}
+.titre_club p{
+    letter-spacing: 2px;
+    font-family: Verdana, Tahoma, sans-serif;
+    width: 50%;
+}
+.btn-club{
+    font-family: MavenPro;
+    display: block;
+	position: absolute;
+	right: 120px;
+	top: 95px;
+	padding: 18px 30px;
+	background: #F2CA98;
+	text-align: center;
+	width: 7%;
+	border-radius: 29px;
+	font-size: 0.9rem;
+	transition: .6s;
+    text-transform: uppercase;
+}
+.btn-club a{
+    color: #6D3641;
+    
+}
+.btn-club:hover{
+    background-color:#f2c998ad ;
+
+}
+.club h1{
+    margin-bottom: 50px;
+}
+
+.clubs{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;    
+    flex-wrap: wrap;
+    padding-top: 70px;
+    height: 375px;
+    margin-bottom: 100px;
+    padding-left: 100px;
+}
+
+.cart{
+    border-radius: 10px;
+    width: 250px;
+    height: 315px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    box-shadow: 0.7rem 1rem 5px #ccc;
+}
+
+.c2e{
+    background: url(image/C2E-background.jpg);
+    background-size: cover;
+}
+
+.club-logo-c2e{
+    width: 50px;
+    height: 20px;
+    margin: 20px;
+    margin-bottom: 230px;
+    padding-top: 20px;
+}
+
+.club-logo-c2e img{
+    width: 100%;
+}
+
+.c2e p{
+    margin-left: 20px;
+    font-family: "MavenPro";
+    font-size: 0.9em;
+    background: rgb(29,49,56);
+    color: rgb(17, 240, 195);
+    padding: 5px;
+}
+
+
+.linux{
+    background: url(image/Linux_logo.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.club-logo-linux{
+    width: 70px;
+    height: 30px;
+    margin: 10px;
+    margin-bottom: 210px;
+}
+
+.club-logo-linux img{
+    width: 100%;
+}
+
+.linux p{
+    padding: 20px 0 10px 30px;
+    font-size: 0.9em;
+    font-family: "roboto";
+    color: rgb(248, 245, 245);
+    font-weight: 400;
+}
+
+.cyber{
+    background: url(image/Cybersecurite.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.club-logo-cyber{
+    width: 50px;
+    height: 30px;
+    margin: 10px;
+    margin-bottom: 240px;
+}
+
+.club-logo-cyber img{
+    width: 100%;
+}
+
+.cyber p{
+    font-size: 0.7em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: rgba(18, 52, 80, 0.9);
+    color: rgb(129,169,205);
+    margin: 0 0 0 20px ;
+    padding: 5px;
+}
+
+.cart .multi{
+    padding: 0;   
+}
+
+.multi{
+    background: url(image/multi2.jpeg);
+    background-size: cover;
+    background-position: left;
+}
+
+.club-logo-multi{
+    width: 80px;
+    height: 80px;
+    margin-bottom: 180px;
+}
+
+.club-logo-multi img{
+    height: 100%;
+}
+
+.multi p{
+    background: black;
+    font-size: 00.7em;
+    font-family: "montserrat";
+    font-weight: 400;
+    color: #377DD8;
+    padding: 5px 0 5px 10px;
+    margin-left: 20px;
+}
+
+.cart:hover{
+    transform: scale(1.1);
+    transition: 0.3s ease-in;
+}
+
+
+
+
+/* ################## activites ################### */
+.activite{
+    padding:  100px 0 0 0;
+}
+.competition{
+    display: flex;
+    margin-left: 100px;
+    margin-top: 70px;
+    justify-content: space-between;
+    background: #f2ca98;
+    border-radius: 5px;
+    box-shadow: 5px 6px 6px #ccc;
+  
+}
+.title{
+    color: #f2ca98;
+    background-color:#6d36413e;
+   
+}
+
+.text{
+    width: 45%;
+    color: #6d3641;
+    background-color: #e2bb8c9d;
+    border-radius: 4px;
+   
+
+}
+.text h1{
+    color: #f2ca98;
+    background-color: #6d3641;
+    text-align: center;
+    font-family: MavenPro;
+    font-size: 50px;
+    padding-top: 10px;
+    padding-bottom: 25px;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    
+}
+.t2 , .t2 h1 {
+    border-radius: 0 6px 6px 0;
+} 
+.t1{
+   border-radius: 7px 0 0 0; 
+}  
+.t1 h1{
+    border-radius: 7px 0 0 0;
+} 
+.text p{
+    padding: 20px 50px 0 30px;
+    font-size: 16px;
+    line-height:2em;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+
+
+/* slide image */
+#outerbox{
+    padding: 0;
+    margin: 0;
+    width: 55%;
+    overflow: hidden; 
+    border-radius: 7px;
+   
+}
+#sliderbox{
+   position: relative;
+   width: 2800px;
+   animation-name:Babaslide;
+   animation-duration: 30s;
+   animation-iteration-count: infinite ;
+}
+#sliderbox img{
+   float: left;
+   width: 700px;
+   height: 450px;
+}
+@keyframes Babaslide {
+   0%{
+       left: 0px;
+   }
+   20%{
+       left:0px;
+   }
+   25%{
+       left:-700px;
+   }
+   45%{
+       left:-700px;
+   }
+   50%{
+       left:-1400px;
+   }
+   70%{
+       left:-1400px;
+   }
+   
+   75%{
+       left:-2100px;
+   }
+   95%{
+       left:-2100px;
+   }
+   100%{
+       left:-2800px;
+   }
+}
+
+
+/*----- #################sectuon -----*/
+.sportif{
+   margin: 50px 100px 50px 0;
+}
+
+.section{
+    border: none solid black ;
+    width: auto ;
+    margin-top: 10px ;
+    height: 500px;
+    display: flex ;
+    clip-path: polygon(0 0, 100% 0, 100% 95%, 50% 100%, 0 95%) ;
+}
+.section h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+    font-weight: 100 ;
+    margin-top: 5px ;
+    
+}
+.photo_sport{
+    border: 0px solid black ;
+    width: 50% ;
+    /* background: url(sport/FB_IMG_1651253832266.jpg); */
+    background-size: cover ;
+    background-position: center ;
+    animation-name: baba_slides ;
+    animation-duration: 20s ;
+    animation-iteration-count: infinite ;
+    height: 500px;
+}
+@keyframes baba_slides{
+    0%{
+        background: url(sport/Screenshot_20220814-144945.png);
+        background-position: center ;
+        background-size: cover ;
+    }
+    25%{
+        background: url(sport/IMG_2473.jpeg);
+        background-size: cover ;
+        background-position: center ;
+    }
+    50%{
+        background: url(sport/foot.jpg);
+        background-size: cover ;
+        background-position: center ;
+    }
+    75%{
+        background: url(sport/IMG_2837.jpeg);
+        background-size: cover ;
+        background-position: center ;
+    }
+    100%{
+        background: url(sport/received_3183802041897209.jpeg);
+        background-size: cover;
+        background-position: center;
+    }
+}
+.para_sport{
+    width: 50% ;
+    padding-left: 10px ;
+    background-color: #6d3641 ;
+}
+.section{
+    padding-left: 20px;
+}
+ h4{
+    font-family: maven ;
+    font-size: 1.5em ;
+    font-weight: 100 ;
+    margin-top: 20px ;
+    width: 200px ;
+    height: 40px;
+    border-radius: 20px ;
+    padding-left: 5% ;
+    padding-top: 2% ;
+    background-color: #f2ca98 ;
+    color: #6d3641 ;
+}
+.para_sport p{
+    margin-top: 10px ;
+    font-size: 1.1em ;
+    font-family: MavenPro ;
+    font-weight: lighter;
+    color: #f2ca98 ;
+}
+
+
+
+/*------fin section -----*/
+
+/*-----footer------*/
+footer{
+    background-color:#fff ;
+    clip-path: polygon(0 0,50% 5% , 100% 0, 100% 100% , 0% 100%) ;
+    margin-top: 100px ;
+    padding-top: 20px ;
+}
+footer p , footer li{
+    color: #561F25; 
+    font-size: 0.9em ;
+    font-family: mavenpro ;
+    
+}
+.footer{
+    margin-left: 100px;
+    margin-right: 100px;
+    height: 150px;
+    display: flex ;
+    margin-bottom: 80px ;
+    padding-top: 100px;
+    justify-content: space-around ;
+}
+.footer h3{
+    color: #561F25 ;
+}
+.article-footer{
+    line-height: 1.2;
+    flex-basis: 20%;
+    min-width: 180px;
+}
+.article-footer h3{
+    font-family: MavenPro;
+    margin-bottom: 10px;
+    
+}
+.article-footer li{
+    line-height:1.4;
+
+}
+.logo-foot{
+    margin-top: 10px;
+}
+.logo-foot img{
+    padding-right: 10px;
+}
+.lf1 img{
+    padding-right: 5px;
+}
